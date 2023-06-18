@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body>
+    <div class="main">
+        <section class="screen">
+            <div class="history"><input class="display-box" type="text" id="history" disabled /></div>
+            <input class="display-box" type="text" id="answer" disabled />
+        </section>
+        <section class="calci-btns">
+            <div class="calci-btn-row">
+                <button class="calci-btn special-key" value="(" onclick="addToScreen('(')">(</button>
+                <button class="calci-btn special-key" value=")" onclick="addToScreen(')')">)</button>
+                <button class="calci-btn special-key" value="=" onclick="Calculate()">ans</button>
+                <button class="calci-btn special-key" value="del" onclick="deleteChar()">del</button>
+                <button class="calci-btn special-key" value="clearScreen();" onclick="clearScreen()">clear</button>
+            </div>
+            <div class="calci-btn-row">
+                <button class="calci-btn num-key" value="7" onclick="addToScreen('7')">7</button>
+                <button class="calci-btn num-key" value="8" onclick="addToScreen('8')">8</button>
+                <button class="calci-btn num-key" value="9" onclick="addToScreen('9')">9</button>
+                <button class="calci-btn special-key" value="%" onclick="addToScreen('%')">%</button>
+                <button class="calci-btn special-key" value="sqrt" onclick="addToScreen('sqrt')">√</button>
+            </div>
+
+            <div class="calci-btn-row">
+                <button class="calci-btn num-key" value="4" onclick="addToScreen('4')">4</button>
+                <button class="calci-btn num-key" value="5" onclick="addToScreen('5')">5</button>
+                <button class="calci-btn num-key" value="6" onclick="addToScreen('6')">6</button>
+                <button class="calci-btn special-key" value="*" onclick="addToScreen('*')">x</button>
+                <button class="calci-btn special-key" value="/" onclick="addToScreen('/')">/</button>
+            </div>
+            <div class="calci-btn-row">
+                <button class="calci-btn num-key" value="1" onclick="addToScreen('1')">1</button>
+                <button class="calci-btn num-key" value="2" onclick="addToScreen('2')">2</button>
+                <button class="calci-btn num-key" value="3" onclick="addToScreen('3')">3</button>
+                <button class="calci-btn special-key" value="+" onclick="addToScreen('+')">+</button>
+                <button class="calci-btn special-key" value="-" onclick="addToScreen('-')">-</button>
+            </div>
+            <div class="calci-btn-row">
+                <button class="calci-btn special-key" value="." onclick="addToScreen('.')">.</button>
+                <button class="calci-btn num-key" value="0" onclick="addToScreen('0')">0</button>
+                <button class="calci-btn special-key" value="" onclick="signConvo()">&plusmn;</button>
+                <button class="calci-btn-double" onclick="Calculate()">ENTER</button>
+            </div>
+        </section>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

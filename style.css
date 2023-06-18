@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap");
+
+
+
+html {
+    margin: 0 0;
+    padding: 0 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+
+}
+
+*::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #4d8ac8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+
+}
+
+.main {
+    height: 75%;
+    width: 35%;
+    border-radius: 25px;
+    background-color: #ebf5ff;
+    flex-basis: 400px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+
+}
+
+.screen {
+    margin: 8% 7% 1%;
+    display: flex;
+    width: 86%;
+    height: 20%;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.display-box {
+    height: 80%;
+
+    background-color: #cce5ff;
+
+    border-radius: 10px;
+    border: none;
+
+}
+
+.history {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+#history {
+
+    color: #4d8ac8;
+    width: 100%;
+    padding: 8px 38px;
+    font-size: 14px;
+    border-radius: 10px 10px 0 0;
+}
+
+#answer {
+    font-weight: bold;
+    color: #0C1A32;
+
+    border-radius: 0 0 10px 10px;
+    text-align: right;
+    padding: 0 25px;
+    font-size: 40px;
+}
+.calci-btns {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin-top: 7%;
+}
+
+.calci-btn-row {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 5% 0;
+}
+
+.calci-btn {
+    padding: 16px 0;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-sizing: border-box;
+    flex-basis: 17%;
+    height: 100%;
+    margin: 1% 0;
+}
+
+.calci-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.calci-btn-double {
+    padding: 16px 60px;
+    font-size: 16px;
+    color: #e1f6fc;
+    background-color: #4d8ac8;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 1% 0;
+}
+
+.special-key {
+
+    font-weight: bold;
+    color: #518ac8;
+    background-color: #a2d0fa;
+}
+
+.num-key {
+    font-weight: bold;
+    color: #0C1A32;
+    background-color: #cce5ff;
+}
